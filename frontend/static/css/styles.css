@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #A39E9E;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    background: #192f59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-bottom: 3px solid #A39E9E;
+}
+
+.wall {
+    cursor: none;
+}
+
+main {
+    min-height: 100vh;
+}
+
+section {
+    padding: 5rem 0;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    margin: 0 20px;
+}
+
+.home {
+    justify-content: center;
+    align-items: center;
+}
+
+.home .petunjuk {
+    justify-content: center;
+    align-items: center;
+}
+
+.petunjuk {
+    margin-top: 2rem;
+    padding: 2rem 5rem;
+    box-shadow: 1px 1px 19px 1px #A39E9E;
+    border-radius: 50px;
+}
+
+.alove {
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.clove {
+    line-height: 2rem;
+}
+
+.line-height1 {
+    line-height: 1.9rem;
+}
+
+.clove2 {
+    line-height: 1.5rem;
+}
+
+.bold {
+    font-weight:700;
+}
+
+.ulnote {
+    padding: 1rem;
+    border: 1px solid #000000;
+}
+
+.linstyle {
+    list-style: none;
+}
+
+.displaywell .pic1 {
+    width: 722px;
+    border-radius: 50px;
+}
+
+.formpredict {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 10px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 19px 1px #A39E9E;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+h2,
+.p1 {
+    text-align: center;
+    color: #192F59;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.9rem;
+    font-weight: 900
+}
+
+.p1 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    padding: 0 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+select {
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 50px;
+    border: 2px solid #A39E9E;
+    width: 370px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 500px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #A39E9E;
+    border-radius: 100px;
+    padding: 0 15px;
+    height: 40px;
+    width: 370px;
+    margin-bottom: 1.5rem;
+}
+
+.input-container:hover, select:hover {
+    border-color: #0B3086;
+}
+
+input[type="number"] {
+    outline: none;
+    border: none;
+    height: 45px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; /* Menghilangkan margin default spinner */
+    }
+
+select {
+    width: 24.5rem;
+}
+
+button {
+    width: 100px;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #0B3086;
+    color: white;
+    box-shadow: 1px 1px 1px 1px #0000007e;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 255, 0.828);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #0B3086;
+    text-align: center;
+    box-shadow: 1px 0px 1px 0px #0000007e;
+    padding: 5px 20px;
+    width: 90%;
+    border: 2px solid #0B3086;
+    border-radius: 50px;
+}
+
+#result .hasil {
+    color: #00000062;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #000000;
+}
+
+footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.copyright a {
+    color: #ffffff;
+}
+
+@media (max-width: 400) {
+
+
+    main .predict {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

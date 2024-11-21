@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Jurusan</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="active">Petunjuk</a>
+            <a href="" class="wall">|</a>
+            <a href="#predict">Prediksi</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="petunjuk" id="petunjuk">
+                <h2 class="alove">Petunjuk:</h2>
+                <span class="bold">Aplikasi ini dirancang untuk membantu Anda menentukan jurusan yang cocok berdasarkan nilai akademik dan minat yang mencocokkan dengan nilai akademik mahasiswa yang telah terdaftar pada Universitas ini.</span><br> 
+                <div class="cluex">
+                    <p class="clove">        
+                        <ul>
+                        <span class="bold line-height1">Isi Formulir Dengan Data yang Benar</span> <br>
+                        <li class="linstyle">Masukkan nilai akademik Anda pada setiap mata pelajaran seperti Matematika, Sains, Bahasa Indonesia, IPS, Bahasa Inggris, Olahraga, dan Seni.</li>
+                        <li class="linstyle">Pilih minat Anda dari daftar pilihan yang tersedia (misalnya: Teknologi, Sastra, Pendidikan, Sosial, dll.).</li><br>
+                        
+                        <span class="bold line-height1">Pastikan Data Lengkap</span>  
+                        <li class="linstyle">Semua kolom harus diisi dengan nilai yang sesuai. Hindari mengosongkan kolom agar hasil prediksi dapat ditampilkan.</li><br>  
+                        
+                        <span class="bold line-height1">Klik Tombol Prediksi</span> 
+                        <li class="linstyle">Setelah semua data terisi, klik tombol Prediksi untuk melihat hasil jurusan yang cocok untuk Anda.</li><br>  
+                        
+                        <span class="bold line-height1">Koreksi Data Anda</span>
+                        <li class="linstyle">Jika Anda merasa ada kesalahan input, Anda bisa kembali mengedit nilai atau minat Anda, lalu klik Prediksi lagi.</li><br>  
+                        </ul>
+
+                        <!-- <div class="ulnote">
+                            <ul>
+                                <span class="bold">*Note:</span>
+                                Jika hasil prediksi menunjukkan nama jurusan spesifik (misalnya, Teknik Informatika), maka itu adalah jurusan yang direkomendasikan untuk Anda berdasarkan data yang dimasukkan.
+                                Jika hasil prediksi menunjukkan "Jurusan Umum", itu berarti profil Anda cocok dengan jurusan yang lebih luas, seperti:
+                                <span class="bold">
+                                    <li class="linstyle">- Ilmu Sosial dan Ilmu Politik (FISIP)</li>
+                                    <li class="linstyle">- Ilmu Hukum</li>
+                                    <li class="linstyle">- Administrasi Publik</li>  
+                                    <li class="linstyle">- Pendidikan Umum </li>
+                                    <li class="linstyle">- Kesehatan Masyarakat</li> 
+                                    <li class="linstyle">- Psikologi Umum</li>
+                                    <li class="linstyle">- Olahraga dan Rekreasi</li>
+                                </span>
+                            </ul>
+                        </div> -->
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="predict" id="predict">
+            <div class="displaywell">
+                <img src="../static/asset/img/Group 2.png" alt="pic1" class="pic1">
+            </div>
+            <div class="formpredict" id="formpredict">
+                <h2>Major Predictions</h2>
+                <p class="p1">"Enter your subject grades to predict the courses that are suitable for you!"</p>
+                <form id="predictionForm">
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="math" name="math" placeholder="Input Nilai Matematika!" required>
+                    </div>
+
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="science" name="science" placeholder="Input Nilai Sains!" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="language" name="language" placeholder="Input Nilai Bahasa Indonesia!"
+                        required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="english" name="english" placeholder="Input Nilai Bahasa Inggris!" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="social" name="social" placeholder="Input Nilai IPS!" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="sports" name="sports" placeholder="Input Nilai Olahraga!" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <img src="../static/asset/img/Align left.svg" alt="align-left" class="input-icon">
+                        <input type="number" id="arts" name="arts" placeholder="Input Nilai Seni!" required>
+                    </div>
+
+                    <label for="interest">Minat:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="ekonomi">Ekonomi</option>
+                        <option value="kesehatan">Kesehatan</option>
+                        <option value="olahraga">Olahraga</option>
+                        <option value="pendidikan">Pendidikan</option>
+                        <option value="psikologi">Psikologi</option>
+                        <option value="sains">Sains</option>
+                        <option value="sastra">Sastra</option>
+                        <option value="seni">Seni</option>
+                        <option value="sosial">Sosial</option>
+                        <option value="teknologi">Teknologi</option>
+                    </select>
+
+                    <button type="submit" id="predictButton">Predict</button>
+                </form>
+                <div id="result">
+                    <p class="hasil">...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- <p class="copyright">© Sistem Prediksi Jurusan | All Rights Reserved</p> -->
+        <p class="copyright">Copyright ©2024 Universitas Negeri Makassar <br> By <a href="https://naphile.github.io/nafilrizqullah.github.io/" target="_blank">Chicken Coding</a></p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
