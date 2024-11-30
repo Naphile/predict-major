@@ -314,7 +314,7 @@ footer .copyright {
     .predict {
         margin-top: 6.1rem;
     }
-
+    
     .formpredict {
         padding: 40px 20px 30px;
         width: 360px;
@@ -332,15 +332,15 @@ footer .copyright {
     .input-container input {
         font-size: 1.1rem;
     }
-
+    
     .input-container .input-icon {
         width: 15px;
     }
-
+    
     /* .input-container input::-webkit-input-placeholder {
         font-size: 60%;
         }
-    
+        
         .input-container input::-moz-placeholder {
             font-size: 60%;
             }
@@ -353,63 +353,73 @@ footer .copyright {
                     font-size: 60%;
                     } */
                     
-    #interest {
-        width: 280px;
-        height: 30px;
-        font-size: 1.1rem;
-        padding: 5px;
-    }
-
-    #interest option::selection {
-        font-size: 60%;
-    }
-
-    #interest option::-moz-selection {
-        font-size: 60%;
-    }
-
-    #predictButton {
-        width: 70px;
-        height: 30px;
-        font-size: 90%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 22px;
-    }
-}
-
-@media (max-width: 400px) {
-    main {
-        justify-content: center;
-        align-items: center;
-    }
+                    #interest {
+                        width: 280px;
+                        height: 30px;
+                        font-size: 1.1rem;
+                        padding: 5px;
+                    }
+                    
+                    #interest option::selection {
+                        font-size: 60%;
+                    }
+                    
+                    #interest option::-moz-selection {
+                        font-size: 60%;
+                    }
+                    
+                    #predictButton {
+                        width: 70px;
+                        height: 30px;
+                        font-size: 90%;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        padding-bottom: 22px;
+                    }
+                }
+                @media (max-width: 500px) {
+                    .footer .copyright {
+                        font-size: 100%;
+                    }
+                }
+                
+                @media (max-width: 400px) {
+                    main {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .predict {
+                        margin-top: 4rem;
+                    }
+                    
+                    .displaywell .pic1 {
+                        width: 330px;
+                    }
     
-    .predict {
-        margin-top: 4rem;
-    }
-    
-    .displaywell .pic1 {
-        width: 330px;
-    }
-    
-    .formpredict {
-        width: 330px;
-        padding: 40px 10px 20px;
-    }
+                    .formpredict {
+                        width: 330px;
+                        padding: 40px 10px 20px;
+                    }
 }
 
 @media (max-width: 374px) {
     .displaywell .pic1 {
         width: 280px;
     }
-
+    
     .formpredict {
         width: 275px;
     }
+    
+    .input-container {
+        width: 200px;
+        height: 30px;
+    }
 
-    .footer .copyright {
-
-        font-size: 100%;
+    #interest {
+        width: 230px;
+        height: 30px;
     }
 }
